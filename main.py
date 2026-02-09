@@ -111,7 +111,7 @@ def main():
     if sorted_counts:
         display_results(sorted_counts, total_likes)
 
-        # Optional: Save results to a file
+
         output_file = "analysis_results.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(
