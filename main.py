@@ -1,8 +1,3 @@
-"""
-Instagram Likes Analyzer
-Analyzes your Instagram liked posts from a JSON export.
-"""
-
 import json
 from collections import Counter
 from pathlib import Path
@@ -111,7 +106,7 @@ def main():
     if sorted_counts:
         display_results(sorted_counts, total_likes)
 
-
+        # Save results to a JSON file
         output_file = "analysis_results.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(
